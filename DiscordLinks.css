@@ -102,7 +102,36 @@
     content: "Jump To Discord Branding" !important;
 }
 
-.messageContent-2t3eCI a[href^="https://discord.com/oauth2"]::after
+.messageContent-2t3eCI a[href*="https://discord.com/oauth2"]::after
 {
     content: "Add A Bot" !important;
+}
+
+/*YOUTUBE */
+messageContent-2t3eCI a[href*="https://www.youtube.com"]::after
+{
+    content: "Open " attr(href) " On Youtube";
+    font-size: 11pt !important;
+    line-height: 10px !important;
+    background: rgba(255, 0, 0, 30);
+    color: rgb(255, 200, 200);
+    transition: background-color 50ms ease-out, color 50ms ease-out;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
+}
+/* Twitch */
+messageContent-2t3eCI a[href*="https://twitch.tv"]::after
+{
+    content: "Open " attr(href) " On twitch";
+    font-size: 11pt !important;
+    line-height: 10px !important;
+    background: rgba(137, 71, 235, 30);
+    color: rgb(255, 200, 200);
+    transition: background-color 50ms ease-out, color 50ms ease-out;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
 }
