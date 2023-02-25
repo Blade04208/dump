@@ -104,5 +104,5 @@
 
 .messageContent-2t3eCI a[href^="https://discord.com/oauth2"]::after
 {
-    content: "Jump To Discord App Authorization" !important;
+    content: "Add A Bot" !important;
 }
