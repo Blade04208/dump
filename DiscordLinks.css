@@ -110,7 +110,7 @@
 /*YOUTUBE */
 messageContent-2t3eCI a[href*="https://www.youtube.com"]::after
 {
-    content: "Open " attr(href) " On Youtube";
+    content: ""attr(href)"";
     font-size: 11pt !important;
     line-height: 10px !important;
     background: rgba(255, 0, 0, 30);
@@ -124,11 +124,11 @@ messageContent-2t3eCI a[href*="https://www.youtube.com"]::after
 /* Twitch */
 messageContent-2t3eCI a[href*="https://twitch.tv"]::after
 {
-    content: "Open " attr(href) " On twitch";
+    content: ""attr(href)"";
     font-size: 11pt !important;
     line-height: 10px !important;
     background: rgba(137, 71, 235, 30);
-    color: rgb(255, 200, 200);
+    color: rgb(238, 206, 242);
     transition: background-color 50ms ease-out, color 50ms ease-out;
     cursor: pointer;
     border-radius: 3px;
