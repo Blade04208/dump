@@ -25,8 +25,8 @@
   /* set to '4px solid' to show */
   --embed-color: 1px solid;
   /* set to 'Inter', sans-serif !important to use Inter font*/
-  --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-primary: GG Sans; /* look ma I fixed it */
+  --font-display: GG Sans !important;
   --border-radius-1: 10px;
   --border-radius-2: 8px;
 }
