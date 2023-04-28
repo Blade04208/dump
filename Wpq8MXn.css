@@ -1,0 +1,225 @@
+/* colour coded channels */
+
+div {
+	--ch-text: green;
+	--ch-text-limited: green;
+	--ch-text-threads: green;
+	--ch-text-nsfw: darkred;
+	--ch-announcements: orange;
+	--ch-announcements-limited: orange;
+	--ch-rules: purple;
+	--ch-voice: magenta;
+	--ch-voice-limited: magenta;
+	--ch-voice-locked: black;
+	--ch-forum: cyan;
+	--ch-forum-limited: cyan;
+	--ch-stage: lightblue;
+	--ch-unread: white;
+	--ch-unread-forum: white;
+	--ch-pinged: red;
+}
+
+
+
+.mainContent-20q_Hp [aria-label="Announcements"],
+.channelName-2TeYVY [aria-label="Announcements"],
+.nowrap-PdqN8z [aria-label="Announcements"] 
+{ background-color: var(--ch-announcements); }
+
+.mainContent-20q_Hp [aria-label="Announcements (Limited)"],
+.channelName-2TeYVY [aria-label="Announcements (Limited)"],
+.nowrap-PdqN8z [aria-label="Announcements (Limited)"]
+{ background-color: var(--ch-announcements-limited); }
+
+.mainContent-20q_Hp [aria-label="Text"],
+.channelName-2TeYVY [aria-label="Text"],
+.nowrap-PdqN8z [aria-label="Channel"]
+{ background-color: var(--ch-text) }
+
+.mainContent-20q_Hp [aria-label="Text (Limited)"],
+.channelName-2TeYVY [aria-label="Text (Limited)"],
+.nowrap-PdqN8z [aria-label="Text (Limited)"]
+{ background-color: var(--ch-text-limited) }
+
+.mainContent-20q_Hp [aria-label="Text (Active Threads)"],
+.channelName-2TeYVY [aria-label="Text (Active Threads)"],
+.nowrap-PdqN8z [aria-label="Text (Active Threads)"]
+{ background-color: var(--ch-text-threads) }
+
+.mainContent-20q_Hp [aria-label="Text (Age-Restricted)"],
+.channelName-2TeYVY [aria-label="Text (Age-Restricted)"],
+.nowrap-PdqN8z [aria-label="Text (Age-Restricted)"]
+{ background-color: var(--ch-text-nsfw); }
+
+.mainContent-20q_Hp [aria-label="Voice"],
+.channelName-2TeYVY [aria-label="Voice"],
+.nowrap-PdqN8z [aria-label="Voice"]
+{ background-color: var(--ch-voice); }
+
+.mainContent-20q_Hp [aria-label="Voice (Limited)"],
+.channelName-2TeYVY [aria-label="Voice (Limited)"],
+.nowrap-PdqN8z [aria-label="Voice (Limited)"]
+{ background-color: var(--ch-voice-limited); }
+
+.mainContent-20q_Hp [aria-label="Rules"],
+.channelName-2TeYVY [aria-label="Rules"],
+.nowrap-PdqN8z [aria-label="Rules"]
+{ background-color: var(--ch-rules); }
+
+.mainContent-20q_Hp [aria-label="Forum"],
+.channelName-2TeYVY [aria-label="Forum"],
+.nowrap-PdqN8z [aria-label="Forum"]
+{ background-color: var(--ch-forum); }
+
+.mainContent-20q_Hp [aria-label="Forum (Limited)"],
+.channelName-2TeYVY [aria-label="Forum (Limited)"],
+.nowrap-PdqN8z [aria-label="Forum (Limited)"]
+{ background-color: var(--ch-forum-limited); }
+
+.mainContent-20q_Hp [aria-label="Stage"],
+.channelName-2TeYVY [aria-label="Stage"],
+.nowrap-PdqN8z [aria-label="Stage"]
+{ background-color: var(--ch-stage); }
+
+.nowrap-PdqN8z [aria-label="No Access"]
+{ background-color: var(--ch-voice-locked); }
+
+
+.icon-3akWb2 { background-color: var(--ch-voice); }
+.mainContent-20q_Hp [aria-label="Voice (Locked)"] { background-color:  var(--ch-voice-locked); }
+
+.unread-36eUEm {
+	background-color: var(--ch-unread);
+	width: 2px;
+	height: 32px;
+	top: 0;
+	margin: 0px;
+	position: absolute;
+	left: 13px;
+	border-radius: 0;
+	z-index: -1;
+}
+.containerDefault-YUSmu3:has(.unread-36eUEm) + .containerDefault-YUSmu3 .unread-36eUEm {
+	height: 35px;
+	top: -4px;
+}
+.children-1MGS9G:has(.text-xs-semibold-GgBYxI) .channelInfo-3jN1ay {
+	background-color: var(--ch-unread-forum);
+	height: 32px;
+	width: 2px;
+	margin-left: -498px;
+	top: 0;
+	position: absolute;
+}
+.children-1MGS9G {
+	pointer-events: none;
+	transition: none !important;
+}
+.text-xs-semibold-GgBYxI { display: none; }
+
+.mainContent-20q_Hp {
+	padding-left: 5px;
+}
+.mentionsBadge-3H1BKJ {
+	left: 3px;
+	margin-top: -10px;
+	position: absolute;
+}
+.mentionsBadge-3H1BKJ .numberBadge-37OJ3S {
+	width: 7px !important;
+	height: 35px !important;
+	padding: 0 !important;
+	min-width: unset;
+	min-height: unset;
+	font-weight: unset;
+	border-radius: unset;
+	background-color: var(--ch-pinged) !important;
+	margin-top: -9px !important;
+	white-space: break-word !important;
+}
+
+
+
+
+/* thread part */
+
+.spineBorder-1-F4s1 {
+	margin-top: -18px;
+	margin-left: -12px;
+	width: 3px;
+}
+
+.spine-29OFwR {
+	margin-left: -9px;
+	transform: scale(1.5);
+	z-index: 1;
+}
+.spine-29OFwR[style^="trans"/*positivity*/] {
+	transform: scale(1.5) rotateX(180deg) translateY(-9px) !important;
+}
+
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Text (Active Threads)"]) + .container-1Bj0eq .spineBorder-1-F4s1 { background-color: var(--ch-text-threads); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Text (Active Threads)"]) + .container-1Bj0eq .spine-29OFwR { color: var(--ch-text-limited); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Text (Age-Restricted)"]) + .container-1Bj0eq .spineBorder-1-F4s1 { background-color: var(--ch-text-nsfw); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Text (Age-Restricted)"]) + .container-1Bj0eq .spine-29OFwR { color: var(--ch-text-nsfw); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Rules"]) + .container-1Bj0eq .spineBorder-1-F4s1 { background-color: var(--ch-rules); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Rules"]) + .container-1Bj0eq .spine-29OFwR { color: var(--ch-rules); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Announcements (Limited)"]) + .container-1Bj0eq .spineBorder-1-F4s1 { background-color: var(--ch-announcements-limited); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Announcements (Limited)"]) + .container-1Bj0eq .spine-29OFwR { color: var(--ch-announcements-limited); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Announcements"]) + .container-1Bj0eq .spineBorder-1-F4s1 { background-color: var(--ch-announcements); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Announcements"]) + .container-1Bj0eq .spine-29OFwR { color: var(--ch-announcements); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Forum (Limited)"]) + .container-1Bj0eq .spineBorder-1-F4s1 { background-color: var(--ch-forum); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Forum (Limited)"]) + .container-1Bj0eq .spine-29OFwR { color: var(--ch-forum); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Forum"]) + .container-1Bj0eq .spineBorder-1-F4s1 { background-color: var(--ch-forum-limited); }
+.containerDefault-YUSmu3:has(.iconContainer-21RCa3[aria-label="Forum"]) + .container-1Bj0eq .spine-29OFwR { color: var(--ch-forum-limited); }
+
+/* end of thread part, jeez this lowkey took forever to figure out */
+
+.iconContainer-21RCa3,
+.icon-3akWb2,
+.icon-2Ph-Lv {
+	width: 3px;
+	margin-left: -5px;
+	margin-top: 0px;
+	height: 30px !important;
+	position: absolute;
+}
+.iconContainer-21RCa3 {
+	height: 45px !important;
+	margin-left: -10px;
+}
+.container-1Bj0eq:has(.spine-29OFwR:not([style^="trans"/*positivity*/])) + .containerDefault-YUSmu3 .iconContainer-21RCa3 {
+	height: 70px !important;
+}
+.container-1Bj0eq:has(.spine-29OFwR:not([style^="trans"/*positivity*/])) + .containerDefault-YUSmu3 .content-1gYQeQ {
+	overflow: visible;
+}
+.container-1Bj0eq:has(.spine-29OFwR:not([style^="trans"/*positivity*/])) + .containerDefault-YUSmu3 .content-1gYQeQ:hover {
+  transform: scaleY(1);
+}
+
+
+.wrapper-NhbLHG {
+	padding: 0;
+}
+
+.icon-3akWb2,
+.icon-2Ph-Lv {
+	fill-opacity: 0%;
+}
+
+svg.icon-2W8DHg,
+.arrow-2HswgU.icon-3zI3d2 {
+	visibility: hidden;
+}
+
+.mainContent-uDGa6R[aria-expanded="false"] .overflow-1wOqNV {opacity: 50%; }
+.mainContent-uDGa6R .overflow-1wOqNV {
+	left: 9px;
+	bottom: 4px;
+	position: absolute;
+}
+
+.content-1gYQeQ {
+	border-radius: 0px;
+}
