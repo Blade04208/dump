@@ -1,19 +1,19 @@
 /* colour coded channels */
 
 div {
-	--ch-text: green;
-	--ch-text-limited: green;
-	--ch-text-threads: green;
-	--ch-text-nsfw: darkred;
-	--ch-announcements: orange;
-	--ch-announcements-limited: orange;
-	--ch-rules: purple;
-	--ch-voice: magenta;
-	--ch-voice-limited: magenta;
-	--ch-voice-locked: black;
-	--ch-forum: cyan;
-	--ch-forum-limited: cyan;
-	--ch-stage: lightblue;
+	--ch-text: rgb(45, 207, 199);
+	--ch-text-limited: rgb(45, 207, 199);
+	--ch-text-threads: rgb(45, 207, 199);
+	--ch-text-nsfw: rgb(241, 71, 71);
+	--ch-announcements: rgb(64, 238, 186);
+	--ch-announcements-limited: rgb(64, 238, 186);
+	--ch-rules: rgb(45, 115, 207);
+	--ch-voice: rgb(243, 243, 89);
+	--ch-voice-limited: rgb(243, 243, 89);
+	--ch-voice-locked: #313338;
+	--ch-forum: rgb(221, 98, 252);
+	--ch-forum-limited: rgb(221, 98, 252);
+	--ch-stage: rgb(223, 241, 143);
 	--ch-unread: white;
 	--ch-unread-forum: white;
 	--ch-pinged: red;
