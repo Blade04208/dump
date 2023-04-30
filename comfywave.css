@@ -1,12 +1,26 @@
 /* Comfy Code, kanged from Comfy but modified be me so you gotta give me credit >:D */
 /* Comfy-Style Spotify Player
  * Kanged and modified code from https://github.com/Comfy-Themes/Discord
+ * Now with hardcoded status colors!
  */
 :root {
   --spotify-vencord-wave-width: 240px;
-  --spotify-vencord-color: var(--spotify);
+  --spotify-vencord-color: var(--current-status);
   /* Use HSL Values for the next one */
-  --spotify-vencord-text: var(--primary-600-hsl);
+  --spotify-vencord-text: var(--primary-100-hsl);
+}
+
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Online"]) {
+ --current-status: #23a559;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Idle"]) {
+ --current-status: #f0b132;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Do Not Disturb"]) {
+ --current-status: #f23f42;
+}
+.container-YkUktl:has(.avatar-1EWyVD[aria-label*="Invisible"]) {
+ --current-status: #5d5f66;
 }
 
 @keyframes spotifywave {
