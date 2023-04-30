@@ -4,7 +4,7 @@
  */
 :root {
   --spotify-vencord-wave-width: 240px;
-  --spotify-vencord-color: var(--spotify);
+  --spotify-vencord-color: #181d2f;
   /* Use HSL Values for the next one */
   --spotify-vencord-text: var(--primary-600-hsl);
 }
