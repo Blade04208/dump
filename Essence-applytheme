@@ -3,9 +3,10 @@
 /* @import url('https://discord-extensions.github.io/essence/src/vendors/horizontal-server-list.css'); */
 @import url('https://discord-extensions.github.io/essence/src/vendors/iconsax-discord.css');
 
-
+@import url('https://raw.githubusercontent.com/Blade04208/css/main/EssenceBifrost.css')
 /* || 📢 Source */
 @import url('https://discord-extensions.github.io/essence/src/source.css');
+
 
 :root {
     --essence-app-rounding: 6px;
