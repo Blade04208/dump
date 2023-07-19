@@ -18,7 +18,7 @@
 
 :root {
   --background-image: url('https://i.imgur.com/toTEEzn.jpg');
-  --background-image-blur: 25px;
+  --background-image-blur: 40px;
   --background-image-size: cover;
   --background-image-position: center;
   --popout-image: transparent;
