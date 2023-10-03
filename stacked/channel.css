@@ -1,0 +1,10 @@
+.sidebar-1tnWFu {
+    width: 0px!important;
+    padding-left: var(--channel-mini)!important;
+    transition: all 0.1s;
+}
+.sidebar-1tnWFu:hover {
+    transition-delay: 0.1s;
+    width: var(--channel-max)!important;
+    padding-left: initial!important;
+}
