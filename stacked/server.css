@@ -1,0 +1,10 @@
+.guilds-2JjMmN {
+    width: 0px!important;
+    padding-left: var(--guild-mini)!important;
+    transition: all 0.1s; /* smoothest slide in the west */
+}
+.guilds-2JjMmN:hover {
+    transition-delay: 0.075s;
+    width: var(--guild-max)!important;
+    padding-left: initial!important;
+}
