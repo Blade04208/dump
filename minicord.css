@@ -1,0 +1,402 @@
+
+
+// #####################################################################
+/* 🐰🐰🐰 100% STOLEN FROM _kokussz_!!!!!!!!!!!!!!!!!!!!!!!!!!! 🐰🐰🐰 */
+// #####################################################################
+
+
+.panel_bd8c76.activityPanel__22355 {
+    background: var(--bg-overlay-2,var(--background-secondary-alt));
+}
+
+.scrollableContainer__33e06.themedBackground__6b1b6.webkit__8d35a {
+    margin-right: -12px;
+    /* padding-right: 0px; */
+}
+.webkit__8d35a .buttons_ce5b56 {
+    margin-right: 8px;
+}
+
+.activityPanel__22355 {
+    border-bottom: 0px;
+}
+
+.sansAttachButton__996a4:after, .container_ca50b9:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    box-shadow: var(--elevation-low);
+    z-index: 1;
+    pointer-events: none;
+}
+
+[aria-label="Start Video Call"],
+[aria-label="Videohívás indítása"],
+.akaBadge__7df41,
+[aria-label="Show User Profile (Unavailable)"], 
+[aria-label="Felhasználói profil megjelenítése (Nem érhető el)"], 
+.anchor_c8ddc0
+{display: none!important;}
+
+
+@media only screen and (min-width: 639px)  {
+.attachButton_eba568 {
+    margin-left: -7px;
+    margin-right: 7px;
+}
+}
+
+@media only screen and (max-width: 418px)  {
+
+/*szerver sáv*/
+.wrapper__3af0b {
+    width: 32px;
+    height: 32px;
+}
+.svg_ad7356 {
+
+    width: 32px;
+    height: 33px;
+}
+.wrapper__3670f {
+    height: 32px;
+}
+
+.listItem_fa7b36 {
+    width: 50px;
+}
+
+.expandedFolderBackground__1bec6 {
+
+    left: 9px;
+    
+    width: 32px;
+}
+.guilds__2b93a {
+    width: 50px;
+}
+
+.guildSeparator_dcb3cc {
+    margin-top: 3.5px;
+}}
+@media only screen and (max-width: 380px)  {
+
+
+
+
+
+img.avatar__08316.clickable_d866f1, 
+[aria-label="Kitűzött üzenetek"], 
+[aria-label="Pinned Messages"], 
+.search__07df0, .anchor_c8ddc0, 
+.recentsIcon__3c4cf, .attachButton_b1db83, 
+.buttonContainer__9b459, [aria-label="Open Translate Modal"],
+.timestamp_cdbd93,
+.vc-platform-indicator,
+ span.vc-smyn-suffix, .text-xs-semibold_a3a2b4.barText__1a44f,.akaBadge__7df41 
+{display: none!important;}
+.a11y-font-scaled-down .cozy_f5c119.wrapper__09ecc, .a11y-font-scaled-down .cozy_f5c119.wrapper__09ecc .header__39b23 {
+    padding-left: 42px;
+}
+.cozy_f5c119.wrapper__09ecc {
+    margin-top: 0px;}
+.searchBarComponent__22760 {
+    position: relative;
+    overflow: hidden;
+}
+.message__80c10 {
+    padding-right: 4px!important;
+    padding-left: 18px!important;
+}
+.groupStart__56db5  {
+    margin-top: 12px!important;}
+
+
+.searchBarComponent__22760::before {
+    content: '⌕'; /* Unicode karakterkód a nagyító ikonhoz */
+    display: inline-block;
+    margin-right: 15px; /* Opcionális: Távolság az ikon és a gomb szövege között */
+    font-size: 32px; /* Opcionális: Az ikon mérete */
+}
+
+.searchBarComponent__22760::after {
+    content: attr(aria-label);
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+}
+}
+
+
+@media only screen and (max-width: 337px)  {
+.guilds__2b93a {display: none;}
+}
+
+
+
+/* Médialekérdezések 638 pixel szélesség alatt */
+@media only screen and (max-width: 638px)  {
+
+.separator__8424b {display:none}
+
+.container_de798d span {
+    max-width: 59px!important;
+    overflow: hidden;
+    display: inline-block;
+    white-space: normal;
+}
+
+h3.membersGroup__85843.container_de798d {
+    padding-left: 1px!important;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+
+.container_b2ce9c {
+    width: 60px;
+}
+.membersWrap__90226 {
+    min-width:fit-content;
+}
+
+
+/*
+.content__4bf10 .chat__52833 {
+    left: -34px;
+    pointer-events:visibleFill;
+}
+.content__4bf10 .content__1a4fe:before {
+    margin-left: 34px;
+}
+
+[aria-label=" (csatorna)"]{
+    padding-left: 34px;
+    background: transparent!important;
+}
+.chat__52833 {
+    background: transparent!important;
+}
+.wrapper_edb6e0.avatar__7c789 {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+section.title_b7d661.container__11d72.themed_b152d4 {
+    padding-left: 0px;
+}
+nav.privateChannels__93473 {
+    background: var(--bg-overlay-1,var(--__header-bar-background));
+}
+button.searchBarComponent__22760 {
+    margin-left: 6px;
+}
+
+.content__4bf10 .avatarWrapper_ba5175 {
+    visibility: hidden;
+}
+*/
+
+    .searchBarComponent__22760::before {
+    content: '⌕'; /* Unicode karakterkód a nagyító ikonhoz */
+    display: inline-block;
+    margin-right: 15px; /* Opcionális: Távolság az ikon és a gomb szövege között */
+    font-size: 32px; /* Opcionális: Az ikon mérete */
+}
+button.attachButton_b1db83.attachButton_eba568.button_afdfd9 {
+    margin-left: 1px;
+    padding-right: 15px;}
+
+.message__80c10.cozyMessage__64ce7
+{
+    padding-right: 10px!important;
+}
+img.avatar__08316.clickable_d866f1 {
+margin-left: -4px;
+}
+.container_dbadf5 {
+    margin-left: -7px;}
+
+.searchBarComponent__22760::after {
+    content: attr(aria-label);
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+}
+
+    .sidebar_ded4b5 {
+        width: 50px!important;
+        transition: width 0.1s ease;
+    }
+
+    .nameTag__0e320.canCopy__81263 {
+        visibility: hidden;
+    }
+
+    .flex_f5fbb7.horizontal__992f6.justifyStart__42744.alignStretch_e239ef.noWrap__5c413 {
+        visibility: hidden;
+    }
+
+    h2.privateChannelsHeaderContainer_ddcec6.container_de798d,
+    .recentsIcon__3c4cf, .anchor_c8ddc0,
+    .text-xs-semibold_a3a2b4.barText__1a44f
+    
+    {
+        display: none;
+    }
+    .headerChildren__7cd0b {
+    visibility: hidden;
+}
+    .bar__004d9 {
+    padding: 2px 2px;}
+    
+    [aria-label="Csatornák"],
+     [aria-label="Channels"]
+    {visibility: hidden;
+    transition: visibility 0.1s ease;}
+
+    .layout__59abc {
+    padding: 0;
+    }
+    .link__2e8e1 {
+    overflow: visible;
+}
+
+
+
+
+.sidebar_ded4b5:hover,
+.sidebar_ded4b5 *:hover .sidebar_ded4b5{
+    width: 220px !important;
+    transition: width 0.1s ease;
+}
+
+.sidebar_ded4b5:hover [aria-label="Csatornák"], 
+.sidebar_ded4b5:hover [aria-label="Channels"], 
+.sidebar_ded4b5:hover .avatarWrapper_ba5175,
+.sidebar_ded4b5:hover .nameTag__0e320.canCopy__81263, 
+.sidebar_ded4b5:hover .flex_f5fbb7.horizontal__992f6.justifyStart__42744.alignStretch_e239ef.noWrap__5c413 {
+    visibility: visible !important;
+    transition: visibility 0.1s ease;
+    
+}
+.sidebar_ded4b5:hover + .chat__52833,
+.sidebar_ded4b5:hover + .chat__52833 .content__1a4fe:before {
+    margin-left: 0px !important;
+}
+
+.sidebar_ded4b5:hover .headerChildren__7cd0b {
+    visibility: visible !important;
+}
+}
+
+
+
+
+
+.flex_f5fbb7.horizontal__992f6.justifyStart__42744.alignStretch_e239ef.noWrap__5c413 {
+    margin-left: -14px;
+}
+
+
+
+
+
+
+
+
+.jumpToPresentBar__0ff7f {
+    background-color: var(--os-accent-color);
+}
+
+
+
+
+[aria-label="Szöveg icon"],[aria-label="Szöveg (aktív beszélgetések) icon"],
+[aria-label="Szöveg (korlátozott) icon"] path:nth-child(2),
+[aria-label="Szöveg (korhatáros) icon"] path:nth-child(2) {
+  opacity: 0;
+}
+.sidebar_ded4b5 {
+    
+    width: 220px;
+    
+}
+.subtitle_bba2b7, .name__8d1ec {
+    overflow: visible;
+}
+.form__13a2c {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -8px;
+}
+.sansAttachButton__996a4 {
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+.channelTextArea__2e60f {
+    margin-bottom: 0px;
+}
+.scrollableContainer__33e06{
+    border-radius: 0px;
+}
+
+.base__512ed {
+    bottom: 53px;
+    height: 18px;
+    
+}
+.base__512ed .cooldownWrapper_de448f {
+    margin-right: 0;
+    background: var(--bg-overlay-2,var(--background-tertiary));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 3px;
+    line-height: 17px;
+}
+.fontSize15Padding__91b40 {
+    padding-bottom: 12px;
+    padding-top: 11px;
+}
+
+
+[aria-label="Ajándék küldése"]{display:none;}
+[aria-label="GIF válogató megnyitása"]{display:none;}
+[aria-label="Open GIF picker"]{display:none;}
+[aria-label="Matricaválogató megnyitása"]{display:none;}
+[aria-label="Open sticker picker"]{display:none;}
+
+
+/*Nukes the discord branding*/
+[class^=wordmarkWindows],
+[class^=typeWindows-]:not([class*=withBackgroundOverride]), 
+#app-mount:has([class^=container]>[class^=uploadArea]>[class^=uploadDropModal])>[class^=typeWindows], 
+#app-mount:has([class^=chatLayerWrapper]>[class^=container]>[class^=container])>[class^=typeWindows], 
+#app-mount:has([class^=pageWrapper])>[class^=typeWindows] 
+{
+    display: none
+}
+
+
+
+/* "GIF" text in profile banner GONE*/
+
+[class*=gifTag] {
+  display: none;
+}
+
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+  display: none;
+}
+
+
+div > [href="/store"], div > [href="/shop"]             /* Nitro Button above DM List */ {
+    display: none /*!important*/;
+}
