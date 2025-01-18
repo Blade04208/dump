@@ -362,18 +362,6 @@ display: none;
   background: var(--brand-800);
 }
 
-[data-author-username="the.rabbit.disabler"] [class^=contents_]>[class*=messageContent_]:not(:empty) {
-  background: var(--brand-500);
-  -ms-flex-align: end;
-  color: #ffffff;
-}
-
-[data-author-username="the.rabbit.disabler"] [class^=contents_]:hover>[class*=messageContent_]:not(:empty) {
-  background: var(--brand-600);
-  -ms-flex-align: end;
-  color: #ffffff;
-}
-
 
 /* credit
 */
