@@ -360,7 +360,11 @@ html:has([class^="sidebar_"][data-collapsed="true"]) body:not(:has([class^="memb
   padding: 0 !important;
   margin: 0 !important;
   width: calc(100% + 16px);
+    &[data-list-id^="private-channels-uid_"] {
+    margin-bottom: calc(var(--custom-app-panels-height))!important;
+  }
 }
+
 
 #app-mount li[class^="containerDefault_"] a,
 [class*="basicChannelRowLink_"] {
