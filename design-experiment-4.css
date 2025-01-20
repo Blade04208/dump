@@ -43,6 +43,50 @@ ul[class^="content_"] {
   height: 0px !important;
 }
 
+[class^="layer_"]:has([class^="standardSidebarView_"]),
+[class^="standardSidebarView_"] {
+  background: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(2.5px) brightness(50%);
+
+  [class^="userInfo_"] {
+    position: relative;
+    top: -120px;
+    height: 0px;
+
+    [class*="avatar_"] {
+      top: 0px !important;
+    }
+  }
+}
+
+#app-mount [class*="baseLayer_"] {
+  opacity: 1 !important;
+}
+
+[class^="sidebarRegion_"] {
+  max-width: 300px;
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  >div {
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    >nav {
+      width: 300px;
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
+}
+
+[class^="contentColumn_"] {
+  min-width: 0px;
+  max-width: 100vw;
+}
+
+[class^="contentRegion"] {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
 .visual-refresh [class^="sidebar_"]>[class*="guilds_"] {
   margin-bottom: 0px;
   padding-top: 32px;
@@ -62,12 +106,116 @@ ul[class^="content_"] {
     background: rgba(0, 0, 0, 0) !important;
   }
 
-  [class^="unreadMentionsIndicatorBottom_fea3ef"] {
+  .unreadMentionsIndicatorBottom_fea3ef {
     margin-bottom: 32px;
   }
 }
 
-[class^="listItem_"]:not(:has([class^="lowerBadge_"])) [class^="pill_"] {
+
+div:not(.imageContainer_fa854f)>.contentImage_dc67b6 {
+  left: 0px;
+  position: absolute;
+  z-index: -1;
+  max-width: unset !important;
+  width: 100% !important;
+  height: 100% !important;
+  filter: blur(10px) saturate(80%);
+}
+
+.container_c64476 {
+  z-index: 0;
+  overflow: hidden;
+  background-color: black !important;
+  margin-left: 0px;
+  padding-left: 16px;
+  height: 96px;
+  border-radius: 0px 12px 12px 0px;
+
+
+  .infoSection_c64476 {
+    height: 100%;
+    justify-content: end;
+    z-index: 0;
+
+    .contentTitle_c64476::before {
+      opacity: 0.75;
+      content: "played ";
+    }
+
+    * {
+      text-shadow: 0px 0px 10px rgb(0, 0, 0);
+      overflow: visible !important;
+      z-index: 1;
+    }
+
+    svg>path {
+      box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+  }
+
+  .facePile_c64476,
+  .facePileItem_c64476,
+  .facePileItem_c64476 div,
+  .facePileItem_c64476 svg,
+  .facePileItem_c64476 foreignObject {
+    width: 20px !important;
+    height: 20px !important;
+    contain: none;
+    align-self: center;
+  }
+
+  .userSection_c64476 {
+    gap: 8px;
+  }
+
+  .badgesContainer_d60c6d {
+    position: absolute;
+    bottom: calc(100% - 16px - 16px);
+    width: calc(100% - 16px - 8px);
+    justify-content: flex-end;
+
+    .badgeContainer_d60c6d {
+      backdrop-filter: saturate(3) blur(200px);
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 4px;
+
+      svg path,
+      [data-text-variant="text-xs/normal"] {
+        text-shadow: none !important;
+        color: #ffffff !important;
+        fill: #ffffff !important;
+      }
+    }
+
+    .badgeContainer_d60c6d:has([style*="color: var(--text-positive);"]) {
+      background-color: var(--text-positive) !important;
+
+
+      svg path {
+        text-shadow: none !important;
+        color: #ffffff !important;
+        fill: #ffffff !important;
+      }
+    }
+
+    .badgeContainer_d60c6d:has(path[fill="var(--status-positive)"]),
+    .badgeContainer_d60c6d:has(path[d^="M4 12a8 8 0 0 1 14.93-4H15a1"]) {
+      height: 16px !important;
+      width: 16px;
+      justify-content: center;
+
+      .badgeLabel_d60c6d {
+        display: none;
+
+      }
+    }
+  }
+
+}
+
+
+[class^="listItem_"]:not(:has([class^="lowerBadge_"])) [class^="pill_"]:not(:has([style="opacity: 1; height: 40px; transform: none;"])) {
   width: 100%;
   justify-content: flex-end;
   z-index: 3;
@@ -85,7 +233,7 @@ ul[class^="content_"] {
   }
 }
 
-[class^="listItem_"]:has([class^="lowerBadge_"]) [class^="pill_"] {
+[class^="listItem_"]:has([class^="lowerBadge_"]) [class^="pill_"]:not(:has([style="opacity: 1; height: 40px; transform: none;"])) {
   width: 100%;
   justify-content: flex-end;
   z-index: 3;
@@ -105,27 +253,21 @@ ul[class^="content_"] {
   transition: all 0.25s;
 }
 
-[class^="listItem_"] {
+[class^="listItem_"]:not(:has([style="opacity: 1; height: 40px; transform: none;"])) {
   overflow: visible;
 }
 
-[class^="listItem_"]:has([class^="folderIcon_"]) [class^="pill_"] span {
+[class^="listItem_"]:has([class^="folderIcon_"]) [class^="pill_"]:not(:has([style="opacity: 1; height: 40px; transform: none;"])) span {
   margin-right: 11px;
   margin-top: 36px;
 }
 
-[class^="listItem_"]:has([class^="lowerBadge_"]) [class^="pill_"] span {
+[class^="listItem_"]:has([class^="lowerBadge_"]) [class^="pill_"]:not(:has([style="opacity: 1; height: 40px; transform: none;"])) span {
   display: none;
 }
 
-[class^="listItem_"]:hover [class^="pill_"],
-[class^="listItem_"]:has([class^="lowerBadge_"]):hover [class^="pill_"] {
-  width: 100%;
-  justify-content: flex-end;
-  z-index: 3;
-  overflow: visible;
-  pointer-events: none;
-
+[class^="listItem_"]:hover [class^="pill_"]:not(:has([style="opacity: 1; height: 40px; transform: none;"])),
+[class^="listItem_"]:has([class^="lowerBadge_"]):hover [class^="pill_"]:not(:has([style="opacity: 1; height: 40px; transform: none;"])) {
   span {
     display: block !important;
     color: rgba(0, 0, 0, 0) !important;
@@ -140,6 +282,52 @@ ul[class^="content_"] {
   }
 }
 
+.pill_a5ad63 [style="opacity: 1; height: 40px; transform: none;"] {
+  width: 100%;
+  overflow: visible !important;
+  opacity: 0.7;
+}
+
+.pill_a5ad63 [style="opacity: 1; height: 40px; transform: none;"] {
+  right: 0;
+  height: 53px !important;
+  background-color: var(--background-accent);
+  width: 64px;
+  border-radius: 30% 0 0 30%;
+  filter: drop-shadow(0px 14px 8px rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  animation: pillAnimateIn 0.3s backwards cubic-bezier(0, 0, 0, 1.4);
+}
+
+.pill_a5ad63 [style="opacity: 1; height: 40px; transform: none;"]::after,
+.pill_a5ad63 [style="opacity: 1; height: 40px; transform: none;"]::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 15px 15px 0 15px var(--background-accent);
+}
+
+.pill_a5ad63 [style="opacity: 1; height: 40px; transform: none;"]::before {
+  top: 100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 20px;
+  box-shadow: 15px -15px 0 15px var(--background-accent);
+}
+
+@keyframes pillAnimateIn {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+}
+
+
+
+
 body:not(:has([class^="sidebar_"][data-collapsed="true"])) [class^="sidebarResizeHandle_"] {
   right: -16px !important;
 }
@@ -147,6 +335,23 @@ body:not(:has([class^="sidebar_"][data-collapsed="true"])) [class^="sidebarResiz
 [class*="AppLauncher"] {
   display: none;
 }
+
+[class^="accountProfileCard_"]>svg {
+  overflow: visible;
+  min-height: unset !important;
+
+  width: 100%;
+
+  >foreignObject>div {
+    mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0) 100%);
+    background-size: cover;
+  }
+
+  >mask>circle {
+    display: none;
+  }
+}
+
 
 
 .visual-refresh [class^="form_"] {
@@ -360,11 +565,11 @@ html:has([class^="sidebar_"][data-collapsed="true"]) body:not(:has([class^="memb
   padding: 0 !important;
   margin: 0 !important;
   width: calc(100% + 16px);
-    &[data-list-id^="private-channels-uid_"] {
-    margin-bottom: calc(var(--custom-app-panels-height))!important;
+
+  &[data-list-id^="private-channels-uid_"] {
+    margin-bottom: calc(var(--custom-app-panels-height)) !important;
   }
 }
-
 
 #app-mount li[class^="containerDefault_"] a,
 [class*="basicChannelRowLink_"] {
