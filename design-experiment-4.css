@@ -119,16 +119,31 @@ div:not(.imageContainer_fa854f)>.contentImage_dc67b6 {
   max-width: unset !important;
   width: 100% !important;
   height: 100% !important;
-  filter: blur(10px) saturate(80%);
+  filter: saturate(80%);
 }
 
 .container_c64476 {
+/* gradient */
+&::after
+{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0px;
+  left: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0),rgba(34, 64, 122, 0.6)), linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, .7));
+  background-blend-mode: screen, difference, ligthen;
+  border-radius: 0px 0px 0 0;
+}
   z-index: 0;
   overflow: hidden;
   background-color: black !important;
   margin-left: 0px;
   padding-left: 16px;
-  height: 96px;
+  height: 120px;
   border-radius: 0px 12px 12px 0px;
 
 
@@ -140,6 +155,7 @@ div:not(.imageContainer_fa854f)>.contentImage_dc67b6 {
     .contentTitle_c64476::before {
       opacity: 0.75;
       content: "played ";
+      font-size: 12px;
     }
 
     * {
@@ -152,14 +168,31 @@ div:not(.imageContainer_fa854f)>.contentImage_dc67b6 {
       box-shadow: 0px 0px 10px rgb(0, 0, 0);
     }
   }
-
+  
+  /* username */
+  .userName_c64476 {
+      position: relative;
+      left: 12px;
+      top: 5px;
+  }
+  /* below username text */
+  .contentTitle_c64476 {
+      position: relative;
+      font-size: 13px;
+      width: 150px;
+      white-space: wrap;
+      bottom: 3px;
+      left: 50px;
+  }
+  
   .facePile_c64476,
   .facePileItem_c64476,
   .facePileItem_c64476 div,
   .facePileItem_c64476 svg,
   .facePileItem_c64476 foreignObject {
-    width: 20px !important;
-    height: 20px !important;
+    top: 3px;
+    width: 23px !important;
+    height: 23px !important;
     contain: none;
     align-self: center;
   }
@@ -282,7 +315,7 @@ div:not(.imageContainer_fa854f)>.contentImage_dc67b6 {
   }
 }
 
-.pill_a5ad63 [style="opacity: 1; height: 40px; transform: none;"] {
+.pill_a5ad63 {
   width: 100%;
   overflow: visible !important;
   opacity: 0.7;
@@ -423,7 +456,7 @@ body:not(:has([class^="members_"])) [class^="chatContent_"] {
 }
 
 body:has([class^="members_"]) [class="subtitleContainer_a7d72e"] {
-  width: calc(100% - 285px);
+  width: calc(100% - 246px);
 }
 
 html:has([class^="sidebar_"][data-collapsed="true"]) body:not(:has([class^="members_"])) [class="subtitleContainer_a7d72e"] {
