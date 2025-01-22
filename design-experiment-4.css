@@ -429,6 +429,19 @@ body:not(:has([class^="sidebar_"][data-collapsed="true"])) [class^="sidebarResiz
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* main chat area shadow */
+.content_a4d4d9::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    left: 281px;
+    width: calc(100% - 513px);
+    height: calc(100% - 48px);
+    background-color: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 40px rgba(0, 0, 0, .25);
+}
+
 [class^="subtitleContainer_"] {
   margin-left: 16px;
 
