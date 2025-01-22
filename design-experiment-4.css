@@ -458,10 +458,15 @@ body:not(:has(.members_cbd271)) .chatContent_a7d72e {
 .subtitleContainer_a7d72e {
   width: calc(100% - 32px);
 }
+
+/* fixes right side of main chat, aligns it with top bar */
+/* makes it smaller so that the activity list in members isnt long as hell*/
+
 .container_cbd271, .membersWrap_cbd271, .members_cbd271 {
     width: 230px !important;
     min-width: 230px !important;
 }
+
 body:has(.members_cbd271) [class="subtitleContainer_a7d72e"] {
   width: calc(100% - 246px);
 }
