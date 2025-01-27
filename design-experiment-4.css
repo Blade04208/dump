@@ -46,8 +46,8 @@ ul[class^="content_"] {
 
 [class^="layer_"]:has([class^="standardSidebarView_"]),
 [class^="standardSidebarView_"] {
-  background: rgba(0, 0, 0, 0.2) !important;
-  backdrop-filter: blur(2.5px) brightness(50%);
+  background: rgba(0, 0, 0, 0) !important;
+  backdrop-filter: blur(20px) brightness(50%);
 
   [class^="userInfo_"] {
     position: relative;
@@ -94,7 +94,7 @@ ul[class^="content_"] {
   top: -32px;
   border-right: 1px solid var(--border-subtle);
   overflow: visible !important;
-  z-index: 200;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0);
   height: calc(100% - 37px);
 
@@ -209,7 +209,7 @@ div:not(.imageContainer_fa854f)>.contentImage_dc67b6 {
     justify-content: flex-end;
 
     .badgeContainer_d60c6d {
-      backdrop-filter: saturate(3) blur(200px);
+      backdrop-filter: saturate(3) blur(20px);
       background-color: rgba(0, 0, 0, 0.25);
       border-radius: 8px;
       padding: 4px;
@@ -436,6 +436,7 @@ body:not(:has(.sidebar_a4d4d9[data-collapsed="true"])) [class^="sidebarResizeHan
 
 .subtitleContainer_a7d72e {
   margin-left: 16px;
+  z-index: 2;
 
   >section {
     border-top-left-radius: 16px;
@@ -470,11 +471,20 @@ body:not(:has(.members_cbd271)) .chatContent_a7d72e {
   min-width: 230px !important;
 }
 
-body:has(.members_cbd271) [class="subtitleContainer_a7d72e"] {
+html:has(.members_cbd271) body:not(:has(.panel_c69a7b)) [class="subtitleContainer_a7d72e"] {
   width: calc(100% - 246px);
 }
 
-html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:not(:has(members_cbd271)) [class="subtitleContainer_a7d72e"] {
+body:has(.panel_c69a7b) .subtitleContainer_a7d72e {
+  width: calc(100% - 372px) !important;
+}
+
+html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:has(.panel_c69a7b) .subtitleContainer_a7d72e {
+  width: calc(100% - 372px + 16px) !important;
+}
+
+
+html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:not(:has(.members_cbd271)) [class="subtitleContainer_a7d72e"] {
   width: calc(100% - 16px);
 }
 
@@ -520,13 +530,15 @@ html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:not(:has(members_cbd271)) 
   border: none;
   background: none;
 
-  .members_cbd271 {
+  [class^="member_"] {
     background: none;
-
-    [class^="member_"] {
-      background: none;
-    }
   }
+
+}
+
+.members_cbd271,
+.membersWrap_cbd271 {
+  background: rgba(0, 0, 0, 0) !important;
 }
 
 .visual-refresh [class*="barBase_"] {
@@ -666,15 +678,69 @@ html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:not(:has(members_cbd271)) 
 [class^="animatedContainer_"] {
   position: absolute;
   width: 100vw;
-  height: 300px !important;
+  height: 350px !important;
   opacity: 1 !important;
-  transform: translateX(-76px) translateY(-88px) !important;
+  transform: translateX(-76px) translateY(-95px) !important;
   background-color: rgba(0, 0, 0, 0) !important;
   border-bottom: none !important;
   pointer-events: none !important;
   box-shadow: none;
-  filter: blur(2.5px);
+  filter: blur(5px);
 }
+.outer_c69a7b {
+  top: -56px;
+  height: calc(100% + 56px);
+  right: 6px;
+  z-index: 0;
+}
+
+
+
+/*
+------------------ bg effect for dms -------------------
+-- This is BROKEN!! please fix someone i cant solve this
+ .header_a823cd .mask_d5fdb1 {
+  contain: none !important;
+}
+
+.header_a823cd,
+.header_a823cd svg,
+.header_a823cd foreignObject,
+.inner_c69a7b,
+.chat_a7d72e,
+.page_a4d4d9 {
+  overflow: visible !important;
+  mask: none;
+}
+
+.header_a823cd foreignObject[mask="url(#uid_11484)"] {
+  position: absolute;
+  width: 100vw;
+  height: 350px !important;
+  opacity: 1 !important;
+  transform: translateX(calc(-100vw + 345px)) translateY(-36px) !important;
+  backdrop-filter: blur(5px);
+  border-bottom: none !important;
+  pointer-events: none !important;
+  z-index: -101;
+}
+
+.banner_d5fdb1 {
+  opacity: 1 !important;
+  height: 350px !important;
+  border-bottom: none !important;
+  pointer-events: none !important;
+  mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+* {
+  z-index: 1;
+}
+
+.panel_c69a7b .scrollerBase_c49869 {
+  overflow: visible !important;
+  /* note that this will stop scrolling here, but who would have that big of a profile */
+} */
 
 [class^="bannerImage_"] {
   transform: none !important;
