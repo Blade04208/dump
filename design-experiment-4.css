@@ -686,12 +686,15 @@ html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:not(:has(.members_cbd271))
   pointer-events: none !important;
   box-shadow: none;
   filter: blur(5px);
+
 }
+
 .outer_c69a7b {
   top: -56px;
   height: calc(100% + 56px);
   right: 6px;
   z-index: 0;
+  transform: none !important;
 }
 
 
@@ -739,11 +742,12 @@ html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:not(:has(.members_cbd271))
 
 .panel_c69a7b .scrollerBase_c49869 {
   overflow: visible !important;
-  /* note that this will stop scrolling here, but who would have that big of a profile */
-} */
+  /* note that this will stop scrolling here, but who would have that big of a profile 
+  }*/
 
-[class^="bannerImage_"] {
-  transform: none !important;
+
+.bannerImage_fd6364 {
+  transform: translateY(0px) scale(1) !important;
   pointer-events: none !important;
 }
 
@@ -752,7 +756,7 @@ html:has(.sidebar_a4d4d9[data-collapsed="true"]) body:not(:has(.members_cbd271))
   height: 300px !important;
   mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
   pointer-events: none !important;
-
+  transform: none !important;
 }
 
 /* compact msgs
