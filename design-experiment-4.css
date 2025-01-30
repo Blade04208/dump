@@ -1,3 +1,57 @@
+:root {
+  --bg-base-tertiary: var(--surfaceDim) !important;
+  --background-base-lower: var(--surfaceContainerLow) !important;
+  --background-primary: var(--surfaceContainer) !important;
+  --brand-500: var(--primary) !important;
+  --text-primary: var(--onSurface) !important;
+  --interactive-normal: var(--onSurface) !important;
+  --status-danger: var(--error) !important;
+  --red-new-50: var(--error);
+  --text-tertiary: var(--onSurfaceVariant);
+  --icon-tertiary: var(--onSurfaceVariant);
+  --background-surface-high: var(--surfaceContainerHigh) !important;
+  --background-surface-higher: var(--surfaceContainerHigh) !important;
+}
+
+.colorRed_dd4f85 {
+  &.lookOutlined_dd4f85 .contents_dd4f85 {
+    color: var(--Error) !important;
+  }
+
+  &.lookFilled_dd4f85 .contents_dd4f85 {
+    color: var(--onError) !important;
+  }
+}
+
+.colorBrand_dd4f85.lookFilled_dd4f85 .contents_dd4f85 {
+  color: var(--onPrimary);
+}
+
+.selectedChannel_f6f816 .link_d8bfb3 {
+  --text-primary: var(--onPrimary);
+  --icon-primary: var(--onPrimary) !important;
+}
+
+#app-mount .endCap_c2654d {
+  color: var(--onError) !important;
+}
+
+.menu_d90b3d {
+  --background-surface-higher: var(--surfaceContainerHigh) !important;
+}
+
+/* change USERNAME to your username */
+[data-author-username="the.rabbit.disabler"] [class^=contents_]>[class*=messageContent_]:not(:empty) {
+  background: var(--brand-500);
+  -ms-flex-align: end;
+  color: var(--onPrimary);
+}
+
+[data-author-username="the.rabbit.disabler"] [class^=contents_]:hover>[class*=messageContent_]:not(:empty) {
+  background: var(--brand-600);
+}
+
+/* ------------------------------------------------------------ */
 /* CREDITS TO .VOIDBBG FOR BUBBLES
 AND OBSIDIANNINJA11 FOR SEARCHBAR */
 
@@ -48,6 +102,7 @@ ul[class^="content_"] {
 [class^="standardSidebarView_"] {
   background: rgba(0, 0, 0, 0) !important;
   backdrop-filter: blur(20px) brightness(50%);
+  z-index: 200; /*fixes bettersettings */
 
   [class^="userInfo_"] {
     position: relative;
